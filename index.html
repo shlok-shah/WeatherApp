@@ -11,11 +11,12 @@
 </head>
 <body>
     <div class="navbar">
-        <h1>What's The Weather ?</h1>
+        <h1>Weather.com</h1>
     </div>
     <div class="container">
-        <div class="search frosted">
-            <form onsubmit="return weatherAPI()">
+        <div class="left">
+            <div class="search frosted">
+                <form onsubmit="return weatherAPI()">
                 <h2>Which City Do You want the weather for?</h2>
                 <br>
                 <label for="city">Search City:</label>
@@ -24,16 +25,16 @@
                 <button type="submit" class="frosted" id="submitbutton"><i class="fa fa-search" aria-hidden="true"></i></button>
                 <br>
                 <br>
+                </form>
+            </div>
+            <div class="frosted search">
                 <h2>Information On City</h2>
                 <p class="cityname"></p>
                 <p class="regionname"></p>
                 <p class="localtime"></p>
                 <p class='latitude'></p>
                 <p class='longitude'></p>
-                
-            </form>
-            
-
+            </div>
         </div>
         <div class="weatherinfo frosted">
             <h2 id="cityweather">Weather Information:</h2>
@@ -65,6 +66,6 @@
         
     </div>
     
-    <script src="scriptwebapp.js"></script>
+    <script src="helloworld.js"></script>
 </body>
 </html>
