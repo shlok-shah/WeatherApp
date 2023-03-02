@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    
+    <title>WEATHER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    
+    
+</head>
+<body>
+    <div class="navbar">
+        <h1>Weather.com</h1>
+    </div>
+    <div class="container">
+        <div class="search frosted">
+            <form onsubmit="return weatherAPI()">
+                <h2>Which City Do You want the weather for?</h2>
+                <br>
+                <label for="city">Search City:</label>
+                <br>
+                <input type="text" id="city" name="city" class="frosted">
+                <button type="submit" class="frosted" id="submitbutton"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <br>
+                <br>
+                <h2>Information On City</h2>
+                <p class="cityname"></p>
+                <p class="regionname"></p>
+                <p class="localtime"></p>
+                <p class='latitude'></p>
+                <p class='longitude'></p>
+                
+            </form>
+            
+
+        </div>
+        <div class="weatherinfo frosted">
+            <h2 id="cityweather">Weather Information:</h2>
+            <br>
+            <br>
+            <div class="icon" >
+                
+            </div>
+            <p id="geninfo"></p>
+            <div class="temp weather">
+                <i class="wi wi-thermometer"></i>
+            </div>
+            <div class="visibility weather">
+                <i class="wi wi-dust"></i>
+            </div>
+            <div class="wind weather">
+                <i class="wi wi-strong-wind"></i>
+            </div>
+            <div class="humidity weather">
+                <i class="wi wi-humidity"></i>
+            </div>
+            <div class="pressure weather">
+                <i class="wi wi-barometer"></i>
+            </div>
+            <div class="precip weather">
+                <i class="wi wi-umbrella"></i>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="helloworld.js"></script>
+</body>
+</html>
