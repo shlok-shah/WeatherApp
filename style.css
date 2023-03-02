@@ -6,7 +6,10 @@
 
 }
 
-
+.left {
+    display: grid;
+    grid-gap: 5px;
+}
 
 .weather {
     margin-top:25px;
@@ -72,7 +75,7 @@ hr {
     height: 90%;
     display: grid;
     grid-template-columns: 1.5fr 2fr;
-    grid-template-rows: 1fr;
+    /* grid-template-rows: ; */
     column-gap: 5px;
 }
 
@@ -112,7 +115,7 @@ hr {
         height: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        /* grid-template-rows: 1fr; */
         grid-gap: 5px;
     }
-  }
+}
