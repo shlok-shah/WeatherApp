@@ -16,7 +16,7 @@ const weatherAPI = () => {
     let icon = document.getElementsByClassName("icon")[0];
     
     let area = document.getElementById("city").value;
-    fetch(`http://api.weatherapi.com/v1/current.json?key=a5734f426b354ff9aab61937230203&q=${area}&aqi=no`).then(response => {
+    fetch(`https://api.weatherapi.com/v1/current.json?key=a5734f426b354ff9aab61937230203&q=${area}&aqi=no`).then(response => {
         console.log('response', response)
         return response.json()
     }).then(data => {
