@@ -9,6 +9,7 @@
 .left {
     display: grid;
     grid-gap: 5px;
+    grid-template-rows: 1fr 2fr;
 }
 
 .weather {
