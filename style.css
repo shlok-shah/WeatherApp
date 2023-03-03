@@ -8,6 +8,11 @@
 #cityinfo{
     text-align: center;
 }
+#submitbutton:hover {
+    
+    /* transform: scale(1.02); */
+    cursor: pointer;
+}
 
 .left {
     display: grid;
