@@ -5,6 +5,9 @@
     
 
 }
+#cityinfo{
+    text-align: center;
+}
 
 .left {
     display: grid;
