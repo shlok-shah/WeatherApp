@@ -29,17 +29,17 @@ const weatherAPI = () => {
         longitude.innerText = "Longitude: " +data.location.lon;
         localtime.innerText = "Local Time: " + data.location.localtime;
         temp.innerHTML = 
-        `<i class="wi wi-thermometer"></i> Temperature: ${data.current.temp_c} degrees C`
+        `<i class="wi wi-thermometer"></i> Temperature: ${data.current.temp_c} deg C`
         visibility.innerHTML = 
         `<i class="wi wi-dust"></i> Visibility: ${data.current.vis_km} KM`
         wind.innerHTML = 
-        `<i class="wi wi-strong-wind"></i> ${data.current.wind_kph} Km Per Hour`
+        `<i class="wi wi-strong-wind"></i> ${data.current.wind_kph} Kmph`
         precip.innerHTML = 
         `<i class="wi wi-umbrella"></i> Precipitation: ${data.current.precip_mm} mm`
         humidity.innerHTML = 
         `<i class="wi wi-humidity"></i> Humidity: ${data.current.humidity} %`
         pressure.innerHTML = 
-        `<i class="wi wi-barometer"></i> Pressure: ${data.current.pressure_mb} mb`
+        `<i class="wi wi-barometer"></i> Pressure: ${data.current.pressure_mb} mbar`
         geninfo.innerText = `The weather in ${data.location.name} is ${data.current.condition.text} right now.`
         icon.innerHTML = `<img src="${data.current.condition.icon}" width=80px>`
         cityweather.innerText = `City: ${data.location.name}`
