@@ -5,6 +5,10 @@
     
 
 }
+.error {
+    color:red;
+
+}
 
 .left {
     display: grid;
