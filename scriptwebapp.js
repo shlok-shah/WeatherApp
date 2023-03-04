@@ -6,6 +6,7 @@ const weatherAPI = () => {
     let longitude = document.getElementsByClassName("longitude")[0];
     let localtime = document.getElementsByClassName("localtime")[0];
     let temp = document.getElementsByClassName("temp")[0];
+    let error = document.getElementsByClassName("error")[0];
     let visibility = document.getElementsByClassName("visibility")[0];
     let wind = document.getElementsByClassName("wind")[0];
     let humidity = document.getElementsByClassName("humidity")[0];
@@ -23,6 +24,7 @@ const weatherAPI = () => {
         console.log(data);
         console.log(data.current.condition.text);
         console.log(cityname);
+        error.innerText = "";
         cityname.innerText = "City: " + data.location.name;
         region.innerText = "Region: " + data.location.region;
         latitude.innerText = "Latitude: " + data.location.lat;
@@ -45,6 +47,7 @@ const weatherAPI = () => {
         cityweather.innerText = `City: ${data.location.name}`
     }).catch(err => {
         console.log('Cannot Find Area');
+        error.innerText = "* Cannot Find Area / City";
         
     })
     
