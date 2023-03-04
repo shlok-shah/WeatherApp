@@ -33,7 +33,7 @@ const weatherAPI = () => {
         visibility.innerHTML = 
         `<i class="wi wi-dust"></i> Visibility: ${data.current.vis_km} KM`
         wind.innerHTML = 
-        `<i class="wi wi-strong-wind"></i> ${data.current.wind_kph} Kmph`
+        `<i class="wi wi-strong-wind"></i> Wind: ${data.current.wind_kph} Kmph`
         precip.innerHTML = 
         `<i class="wi wi-umbrella"></i> Precipitation: ${data.current.precip_mm} mm`
         humidity.innerHTML = 
