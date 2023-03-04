@@ -5,21 +5,18 @@
     
 
 }
-#cityinfo{
-    text-align: center;
-}
-#submitbutton:hover {
-    
-    /* transform: scale(1.02); */
-    cursor: pointer;
-}
 
 .left {
     display: grid;
     grid-gap: 5px;
     grid-template-rows: 1fr 2fr;
     min-width: 250px;
+    
 }
+#cityinfo{
+    text-align: center;
+}
+
 
 .weather {
     margin-top:25px;
@@ -47,16 +44,16 @@ p {
     
 }
 body {
-    background-image: url("Images/thunderstorm-3625405__480.jpg");
+    background-image: url("Images/nature-colorful-landscape-dusk-cloud.jpg");
     background-size:     cover;
     background-repeat:   no-repeat;
-    background-position: top center;
+    background-position: bottom center;
     background-attachment: fixed;
 }
 
 .weatherinfo {
     padding: 15px;
-    border-color: rgb(255, 91, 137);
+    border-color: rgb(0, 0, 0);
     border-width: 4px;
     border-style: double;
 }
@@ -72,10 +69,17 @@ body {
     height: 40px;
     width:25%;
     margin-top: 15px;
+    /* transition: 0.2s; */
+}
+
+#submitbutton:hover {
+    
+    /* transform: scale(1.02); */
+    cursor: pointer;
 }
 
 hr {
-    border-color: rgb(255, 91, 137);
+    border-color: rgb(0, 0, 0);
     border-width: 3px;
     border-style: double;
 }
@@ -91,12 +95,12 @@ hr {
 
 .search {
     padding: 15px;
-    border-color: rgb(255, 91, 137);
+    border-color: rgb(0, 0, 0);
     border-width: 4px;
     border-style: double;
 }
 .frosted{
-    background-color: rgba(255, 255, 255, .15);  
+    background-color: rgba(0, 0, 0, 0.15);  
     backdrop-filter: blur(10px);
     border-radius: 5px;
     
@@ -105,7 +109,7 @@ hr {
 }
 .navbar {
     text-align: center;
-    background-color: rgba(255, 255, 255, .15);  
+    background-color: rgba(0, 0, 0, 0.15);  
     backdrop-filter: blur(10px);
     border-radius: 5px;
     margin-left: 20px;
@@ -113,7 +117,7 @@ hr {
     margin-bottom: 0px;
     margin-top: 5px;
     padding: 15px;
-    border-color: rgb(255, 91, 137);
+    border-color: rgb(0, 0, 0);
     border-width: 2px;
     border-style: groove;
 }
